@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="#B2E0F6"
+    android:padding="5dp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Please Fill Your Details"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/teal_700"
+        android:textAlignment="center"
+        android:layout_marginTop="8dp"
+        android:textAllCaps="true"
+        />
+
+        <EditText
+            android:layout_marginTop="20dp"
+            android:hint="Enter Your Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edtname"
+            android:textSize="18sp"
+            android:inputType="textPersonName"
+            android:textAlignment="center"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edtfname"
+            android:hint="Enter Your Father's Name"
+            android:textSize="18sp"
+            android:textAlignment="center"
+            android:inputType="textNoSuggestions"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edtidno"
+            android:textSize="18sp"
+            android:inputType="number"
+            android:hint="Enter Your Roll/ID Number"
+            android:textAlignment="center"/>
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edtcontact"
+            android:textSize="18sp"
+            android:inputType="phone"
+            android:hint="Enter Your Contact Number"
+            android:textAlignment="center"/>
+
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edtadmdate"
+            android:textSize="18sp"
+            android:inputType="date"
+            android:hint="Your Admission Date"
+            android:textAlignment="center"/>
+
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edtyear"
+            android:textSize="18sp"
+            android:inputType="number"
+            android:hint="Year of Starting Course"
+            android:textAlignment="center"
+            />
+
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edtaddress"
+            android:textSize="18sp"
+            android:hint="Your Present Address"
+            android:textAlignment="center"
+            android:inputType="text"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="2dp"
+        android:layout_margin="1dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gender:- "
+            android:layout_marginTop="10dp"
+            android:textSize="18sp"
+            android:textColor="@color/black" />
+        <RadioGroup
+            android:id="@+id/rggender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <RadioButton
+                android:id="@+id/rbfemale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Female"
+                android:layout_weight="1"
+                android:textSize="18sp"/>
+            <RadioButton
+                android:id="@+id/rbmale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Male"
+                android:layout_weight="1"
+                android:textSize="18sp"/>
+            <RadioButton
+                android:id="@+id/rbother"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Other"
+                android:textSize="18sp"/>
+        </RadioGroup>
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btngenerate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="34dp"
+        android:textSize="24sp"
+        android:text="Generate Id Card"
+        android:textColor="@color/teal_700"
+        android:backgroundTint="#F0F2F4"
+        />
+
+
+</LinearLayout>

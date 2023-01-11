@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">ID Card</string>
+    <string-array name="spinnerlist">
+        <item>Select Branch</item>
+        <item>IT</item>
+        <item>CSE</item>
+        <item>ECE</item>
+        <item>EE</item>
+        <item>CE</item>
+        <item>CHE</item>
+    </string-array>
+</resources>

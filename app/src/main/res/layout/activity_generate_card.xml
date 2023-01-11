@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GenerateCard"
+    android:gravity="center"
+    android:background="#B2E0F6"
+    android:orientation="vertical">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_margin="5dp"
+        app:cardCornerRadius="8dp"
+
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#E3EAEE">
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/logo"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="HALDIA INSTITUTE OF TECHNOLOGY"
+                    android:textAlignment="center"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="(An Institute of icare)"
+                    android:textAlignment="center"
+                    android:textSize="11sp"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Icare Complex,HIT Campus, P.O-HIT,Haldia
+,Purba Medinipur,PIN-721675"
+                    android:textAlignment="center"
+                    android:textSize="11sp"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Email-admin@hithaldia.in"
+                    android:textAlignment="center"
+                    android:textSize="11sp"
+                    />
+                <TextView
+                    android:id="@+id/tvbranch"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Branch :- IT"
+                    android:textAlignment="center"
+                    android:textSize="11sp"
+                    />
+                <TextView
+                    android:id="@+id/tvsession"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Session:- 2019-2023"
+                    android:textAlignment="center"
+                    android:textSize="11sp"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="2dp">
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="#E91E63"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#F1FAFF"
+                android:orientation="horizontal"
+                >
+                <ImageView
+                    android:id="@+id/ivdp"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/add_pic"
+                    android:layout_margin="5dp"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/tvname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="KUMAR ABHISHEK SINGH"
+                        android:textAlignment="center"
+                        android:textColor="#F21515"
+                        android:layout_marginBottom="8dp"/>
+                    <TextView
+                        android:id="@+id/tvfname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Father's Name"
+                        />
+                    <TextView
+                        android:id="@+id/tvcontact"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Contact"
+                        />
+                    <TextView
+                        android:id="@+id/tvidno"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="ID No"
+                        />
+                    <TextView
+                        android:id="@+id/tvadmdate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Admission date"
+                        />
+                    <TextView
+                        android:id="@+id/tvadddress"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Address"
+                        />
+                    <TextView
+                        android:layout_marginTop="16dp"
+                        android:id="@+id/tvsig"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Kumar Abhishek singh"
+                        android:fontFamily="cursive"
+                        android:textAlignment="viewEnd"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="viewEnd"
+                        android:textSize="12sp"
+                        android:text="Signature "/>
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:backgroundTint="#B1C0CD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Share Card"
+        android:textColor="#0A1825"
+        android:layout_marginTop="16dp"
+        android:id="@+id/btnshare"
+        />
+</LinearLayout>
