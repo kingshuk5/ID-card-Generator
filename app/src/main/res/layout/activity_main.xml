@@ -6,7 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity"
     android:orientation="vertical"
-    android:background="#B2E0F6"
     android:padding="5dp">
     <TextView
         android:layout_width="match_parent"
@@ -119,8 +118,7 @@
             android:layout_height="wrap_content"
             android:text="Gender:- "
             android:layout_marginTop="10dp"
-            android:textSize="18sp"
-            android:textColor="@color/black" />
+            android:textSize="18sp" />
         <RadioGroup
             android:id="@+id/rggender"
             android:layout_width="match_parent"

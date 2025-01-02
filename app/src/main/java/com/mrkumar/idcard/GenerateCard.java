@@ -67,11 +67,11 @@ public class GenerateCard extends AppCompatActivity {
 
         if(gender.equalsIgnoreCase("male")){
             tvname.setText("Mr. "+name);
-           // ivdp.setImageResource(R.drawable.a1);
+
         }
         else{
             tvname.setText("Mrs. "+name);
-           // ivdp.setImageResource(R.drawable.a3);
+
         }
 
         int end = Integer.parseInt(year);
